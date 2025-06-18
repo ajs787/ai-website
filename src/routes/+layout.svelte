@@ -23,7 +23,7 @@
 </main>
 
 <footer>
-  <p>© 2025 AI for Behavioral Discovery. All rights reserved.</p>
+  <p> 2025 AI for Behavioral Discovery</p>
 </footer>
 
 <style>

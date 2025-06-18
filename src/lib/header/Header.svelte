@@ -19,8 +19,14 @@
 			<li class:active={$page.url.pathname === '/about'}>
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
+			<li class:active={$page.url.pathname === '/blog'}>
+				<a sveltekit:prefetch href="/blog">Blog</a>
+			</li>
+			<li class:active={$page.url.pathname === '/team'}>
+				<a sveltekit:prefetch href="/team">Team</a>
+			</li>
+			<li class:active={$page.url.pathname === '/resources'}>
+				<a sveltekit:prefetch href="/resources">Resources</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -37,10 +43,12 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		height: 5.5em; 
+		padding: 0 2rem;
 	}
 
 	.corner {
-		width: 3em;
+		width: 4em;
 		height: 3em;
 	}
 
@@ -64,9 +72,17 @@
 		--background: rgba(255, 255, 255, 0.7);
 	}
 
+	nav svg:first-of-type {
+	margin-right: -0.09em;
+	}
+
+	nav svg:last-of-type {
+	margin-left: -0.09em;
+	}
+
 	svg {
-		width: 2em;
-		height: 3em;
+		width: 2.5em;
+		height: 3.5em;
 		display: block;
 	}
 
@@ -78,13 +94,14 @@
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
+		height: 3.5em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		list-style: none;
 		background: var(--background);
 		background-size: contain;
+		
 	}
 
 	li {
@@ -93,7 +110,7 @@
 	}
 
 	li.active::before {
-		--size: 6px;
+		--size: 8px;
 		content: '';
 		width: 0;
 		height: 0;
@@ -108,10 +125,10 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 1em;
+		padding: 0 1.7em;
 		color: var(--heading-color);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
@@ -120,5 +137,9 @@
 
 	a:hover {
 		color: var(--accent-color);
+	}
+
+	li.active a {
+  		color: var(--accent-color);
 	}
 </style>

@@ -8,27 +8,27 @@ import { api } from './api';
  *   text: string;
  *   done: boolean;
  *   pending_delete: boolean;
- * }} Todo
+ * }} Blog
  */
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ locals }) => {
   // locals.userid comes from src/hooks.js
-  const response = await api('GET', `todos/${locals.userid}`);
+  const response = await api('GET', `blog/${locals.userid}`);
 
   if (response.status === 404) {
     // user hasn't created a todo list.
     // start with an empty array
     return {
-      /** @type {Todo[]} */
-      todos: []
+      /** @type {Blog[]} */
+      blog: []
     };
   }
 
   if (response.status === 200) {
     return {
-      /** @type {Todo[]} */
-      todos: await response.json()
+      /** @type {Blog[]} */
+      blog: await response.json()
     };
   }
 
@@ -39,7 +39,7 @@ export const load = async ({ locals }) => {
 export const POST = async ({ request, locals }) => {
   const form = await request.formData();
 
-  await api('POST', `todos/${locals.userid}`, {
+  await api('POST', `blog/${locals.userid}`, {
     text: form.get('text')
   });
 };
@@ -48,7 +48,7 @@ export const POST = async ({ request, locals }) => {
 export const PATCH = async ({ request, locals }) => {
   const form = await request.formData();
 
-  await api('PATCH', `todos/${locals.userid}/${form.get('uid')}`, {
+  await api('PATCH', `blog/${locals.userid}/${form.get('uid')}`, {
     text: form.has('text') ? form.get('text') : undefined,
     done: form.has('done') ? !!form.get('done') : undefined
   });
@@ -58,5 +58,5 @@ export const PATCH = async ({ request, locals }) => {
 export const DELETE = async ({ request, locals }) => {
   const form = await request.formData();
 
-  await api('DELETE', `todos/${locals.userid}/${form.get('uid')}`);
+  await api('DELETE', `blog/${locals.userid}/${form.get('uid')}`);
 };

@@ -14,12 +14,12 @@
 
 <div class="scroll-progress" style="transform: scaleX({scroll})"></div>
 
-<div class="todos" in:fade={{ duration: 600 }}>
-	<h1 in:fly={{ x: -100, duration: 500 }}>Todos</h1>
+<div class="blog" in:fade={{ duration: 600 }}>
+	<h1 in:fly={{ x: -100, duration: 500 }}>Blog</h1>
 
 	<form
 		class="new"
-		action="/todos"
+		action="/blog"
 		method="post"
 		use:enhance={{
 			result: async ({ form }) => {
@@ -28,45 +28,45 @@
 		}}
 		in:fly={{ y: -20, duration: 500 }}
 	>
-		<input name="text" aria-label="Add todo" placeholder="+ tap to add a todo" />
+		<input name="text" aria-label="Add blg" placeholder="+ tap to add a blg" />
 	</form>
 
-	{#each data.todos as todo (todo.uid)}
+	{#each data.blog as blg (blog.uid)}
 		<div
-			class="todo"
-			class:done={todo.done}
+			class="blg"
+			class:done={blg.done}
 			transition:scale|local={{ start: 0.7 }}
 			animate:flip={{ duration: 200 }}
 		>
 			<form
-				action="/todos?_method=PATCH"
+				action="/blog?_method=PATCH"
 				method="post"
 				use:enhance={{
 					pending: ({ data }) => {
-						todo.done = !!data.get('done');
+						blg.done = !!data.get('done');
 					}
 				}}
 			>
-				<input type="hidden" name="uid" value={todo.uid} />
-				<input type="hidden" name="done" value={todo.done ? '' : 'true'} />
-				<button class="toggle" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}" />
+				<input type="hidden" name="uid" value={blg.uid} />
+				<input type="hidden" name="done" value={blg.done ? '' : 'true'} />
+				<button class="toggle" aria-label="Mark blg as {blg.done ? 'not done' : 'done'}" />
 			</form>
 
-			<form class="text" action="/todos?_method=PATCH" method="post" use:enhance>
-				<input type="hidden" name="uid" value={todo.uid} />
-				<input aria-label="Edit todo" type="text" name="text" value={todo.text} />
-				<button class="save" aria-label="Save todo" />
+			<form class="text" action="/blgs?_method=PATCH" method="post" use:enhance>
+				<input type="hidden" name="uid" value={blg.uid} />
+				<input aria-label="Edit blg" type="text" name="text" value={blg.text} />
+				<button class="save" aria-label="Save blg" />
 			</form>
 
 			<form
-				action="/todos?_method=DELETE"
+				action="/blgs?_method=DELETE"
 				method="post"
 				use:enhance={{
-					pending: () => (todo.pending_delete = true)
+					pending: () => (blg.pending_delete = true)
 				}}
 			>
-				<input type="hidden" name="uid" value={todo.uid} />
-				<button class="delete" aria-label="Delete todo" disabled={todo.pending_delete} />
+				<input type="hidden" name="uid" value={blg.uid} />
+				<button class="delete" aria-label="Delete blg" disabled={blg.pending_delete} />
 			</form>
 		</div>
 	{/each}

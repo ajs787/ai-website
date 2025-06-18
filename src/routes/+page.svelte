@@ -13,8 +13,7 @@
   </h1>
 
   <p class="project-blurb">
-    Launched in 2019, this ongoing 6-year project explores how artificial intelligence can be used to analyze and uncover patterns in behavioral data. From academic theory to applied insight, we continue to push the frontier of AI-driven discovery.
-  </p>
+    This ongoing project uses machine learning and CNNs to uncover how EMF radiation may impact animal behavior. Since 2019, we've been turning complex behavioral patterns into actionable insights through AI.  </p>
 </section>
 
 <!-- What We Do Section -->
@@ -55,6 +54,7 @@
 
   .project-blurb {
     font-size: 1.2rem;
+	margin-top: 3rem;
     line-height: 1.8;
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
