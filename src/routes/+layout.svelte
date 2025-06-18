@@ -23,7 +23,7 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+  <p>© 2025 AI for Behavioral Discovery. All rights reserved.</p>
 </footer>
 
 <style>
@@ -41,14 +41,12 @@
 	footer {
 		display: flex;
 		flex-direction: column;
+		margin-top: 15rem;
 		justify-content: center;
 		align-items: center;
 		padding: 40px;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
 
 	@media (min-width: 480px) {
 		footer {

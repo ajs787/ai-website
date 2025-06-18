@@ -16,6 +16,10 @@
   --column-margin-top: 4rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -71,7 +75,8 @@ a:hover {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
   text-align: center;
 }
 
