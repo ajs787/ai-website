@@ -1,6 +1,9 @@
 <script>
   // Counter import removed
+  import DarkModeToggle from './DarkModeToggle.svelte';
 </script>
+
+<DarkModeToggle />
 
 <svelte:head>
   <title>Home</title>
@@ -13,22 +16,16 @@
   </h1>
 
   <p class="project-blurb">
-    This ongoing project uses machine learning and CNNs to uncover how EMF radiation may impact animal behavior. Since 2019, we've been turning complex behavioral patterns into actionable insights through AI.  </p>
+    This ongoing project uses machine learning and CNNs to uncover how EMF radiation may impact animal behavior. Since 2019, we have been turning complex behavioral patterns into actionable insights through AI.  </p>
 </section>
 
 <!-- What We Do Section -->
 <section class="what-we-do">
-  <h2>What We Do</h2>
+  <h2>The Mission</h2>
   <p>
-    Our team builds intelligent systems that can identify, track, and predict complex behavioral trends across time. From lab studies to real-world environments, our models adapt to dynamic, messy human data.
-  </p>
-</section>
+    The AI for Behavioural Discovery project aims to understand whether animal behaviour is affected by exposure to EMF radiation using a machine learning and Convolutional Neural Networks(CNNs) approach. We have conducted experiments on cockroaches, bees, and ants so far using AlexNet, achieving positive results with ants. The model was able to successfully classify field states between Positive, Negative and Off based only on behavioural changes of the ants.
 
-<!-- Contact/Join Section -->
-<section class="get-involved">
-  <h2>Get Involved</h2>
-  <p>Want to collaborate, contribute, or learn more? Reach out to our team or explore the open-source tools we’ve built.</p>
-  <a href="/about">Meet the team →</a>
+  </p>
 </section>
 
 
@@ -42,7 +39,6 @@
     margin: 0 auto;
     text-align: center;
   }
-
 
   .main-title {
     font-size: 4.5rem;
