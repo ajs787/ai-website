@@ -40,7 +40,10 @@
   .switch {
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 1rem;             
+    right: 2rem;          
+    z-index: 1000;  
     width: 75px;
     height: 40px;
     border: 2px solid white;
@@ -61,7 +64,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #2dd4bf;
+    background-color: #2e8cde;
     border-radius: 50%;
     top: 8px;
     left: 9px;

@@ -12,74 +12,45 @@
 
 <svelte:window on:scroll={handleScroll} />
 
-<div class="scroll-progress" style="transform: scaleX({scroll})"></div>
+<div class="content" in:fade={{duration: 300}}>
+	<h1>Weekly Updates</h1>
 
-<div class="blog" in:fade={{ duration: 600 }}>
-	<h1 in:fly={{ x: -100, duration: 500 }}>Blog</h1>
+	<h2>
+		Week 1 - 
+	</h2>
 
-	<form
-		class="new"
-		action="/blog"
-		method="post"
-		use:enhance={{
-			result: async ({ form }) => {
-				form.reset();
-			}
-		}}
-		in:fly={{ y: -20, duration: 500 }}
-	>
-		<input name="text" aria-label="Add blg" placeholder="+ tap to add a blg" />
-	</form>
+	<p>
+		Brief Description
+		embed google slides presentation here
+	</p>
 
-	{#each data.blog as blg (blog.uid)}
-		<div
-			class="blg"
-			class:done={blg.done}
-			transition:scale|local={{ start: 0.7 }}
-			animate:flip={{ duration: 200 }}
-		>
-			<form
-				action="/blog?_method=PATCH"
-				method="post"
-				use:enhance={{
-					pending: ({ data }) => {
-						blg.done = !!data.get('done');
-					}
-				}}
-			>
-				<input type="hidden" name="uid" value={blg.uid} />
-				<input type="hidden" name="done" value={blg.done ? '' : 'true'} />
-				<button class="toggle" aria-label="Mark blg as {blg.done ? 'not done' : 'done'}" />
-			</form>
 
-			<form class="text" action="/blgs?_method=PATCH" method="post" use:enhance>
-				<input type="hidden" name="uid" value={blg.uid} />
-				<input aria-label="Edit blg" type="text" name="text" value={blg.text} />
-				<button class="save" aria-label="Save blg" />
-			</form>
+	<h2>
+		Week 2 - 
+	</h2>
+	
+	<p>
+		Brief Description
+		embed google slides presentation here
+	</p>
 
-			<form
-				action="/blgs?_method=DELETE"
-				method="post"
-				use:enhance={{
-					pending: () => (blg.pending_delete = true)
-				}}
-			>
-				<input type="hidden" name="uid" value={blg.uid} />
-				<button class="delete" aria-label="Delete blg" disabled={blg.pending_delete} />
-			</form>
-		</div>
-	{/each}
-</div>
 
-<div class="extras">
-  <h2>What's next?</h2>
-  <p>This section can contain your notes, project goals, or even motivational quotes 🧠💡</p>
+	<h2>
+		Week 3 - 
+	</h2>
+	<p>
+		Brief Description
+		embed google slides presentation here
+	</p>
 
-  <div class="footer-links">
-    <a href="#hero">Back to Top</a>
-    <a href="/about">Learn More</a>
-  </div>
+	<h2>
+		Week 4 - 
+	</h2>
+	<p>
+		Brief Description
+		embed google slides presentation here
+	</p>
+
 </div>
 
 
@@ -105,5 +76,10 @@
 		padding: 0.5rem 0;
 		border-radius: 8px;
 		margin-bottom: 1rem;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 20px;
 	}
 </style>

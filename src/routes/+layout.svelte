@@ -3,6 +3,7 @@
   import { webVitals } from '$lib/vitals';
   import { browser } from '$app/env';
   import { page } from '$app/stores';
+  import DarkModeToggle from './DarkModeToggle.svelte';
   import '../app.css';
 
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
@@ -15,6 +16,8 @@
     })
   }
 </script>
+
+<DarkModeToggle />
 
 <Header />
 

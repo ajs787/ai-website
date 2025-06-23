@@ -1,10 +1,3 @@
-<script>
-  // Counter import removed
-  import DarkModeToggle from './DarkModeToggle.svelte';
-</script>
-
-<DarkModeToggle />
-
 <svelte:head>
   <title>Home</title>
   <meta name="description" content="AI for Behavioral Discovery project site" />
@@ -21,11 +14,9 @@
 
 <!-- What We Do Section -->
 <section class="what-we-do">
-  <h2>The Mission</h2>
-  <p>
-    The AI for Behavioural Discovery project aims to understand whether animal behaviour is affected by exposure to EMF radiation using a machine learning and Convolutional Neural Networks(CNNs) approach. We have conducted experiments on cockroaches, bees, and ants so far using AlexNet, achieving positive results with ants. The model was able to successfully classify field states between Positive, Negative and Off based only on behavioural changes of the ants.
 
-  </p>
+  <a href="/about">Click here to learn more --></a>
+
 </section>
 
 
@@ -38,6 +29,10 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .description{
+    
   }
 
   .main-title {
@@ -71,7 +66,9 @@
   }
 
   a {
+    font-size: 1.5rem;
     margin-top: 1rem;
+    margin-bottom: 5rem;
     color: var(--accent-color);
     font-weight: 600;
     text-decoration: none;
