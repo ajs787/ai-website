@@ -70,11 +70,15 @@
 </section>
 
 <style>
+	
   .team-section {
     max-width: 1000px;
     margin: 5rem auto;
     padding: 0 2rem;
     text-align: center;
+  }
+  h1 {
+	margin-top: -3rem;
   }
 
 	:global(h1) {

@@ -16,7 +16,7 @@
 </svelte:head>
 
 <div class="content" in:fade={{duration: 300}}>
-	<h1>About</h1>
+	<h1>The Project</h1>
 
 	<p>
 		The AI for Behavioural Discovery project aims to understand whether animal behaviour 

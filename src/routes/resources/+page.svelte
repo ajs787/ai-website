@@ -16,7 +16,7 @@
 	<h1>Resources</h1>
 
 	<p>
-		<a href="https://github.com/Elias2660/Unified-bee-Runner">Github Repository</a> 
+		Link to <a href="https://github.com/Elias2660/Unified-bee-Runner">Github Repository</a> 
 	</p>
 
 </div>
