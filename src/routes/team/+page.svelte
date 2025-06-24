@@ -5,17 +5,17 @@
     {
       name: 'Dr. Richard Martin',
       title: 'Project Advisor',
-      img: '/images/richard-martin.jpg' // replace with real path
+      //img: '/images/richard-martin.jpg' // replace with real path
     },
     {
       name: 'Dr. Richard Howard',
       title: 'Project Advisor',
-      img: '/images/richard-howard.jpg'
+      //img: '/images/richard-howard.jpg'
     },
     {
       name: 'Ben Firner',
       title: 'Project Advisor',
-      img: '/images/ben-firner.jpg'
+      //img: '/images/ben-firner.jpg'
     }
   ];
 
@@ -23,17 +23,17 @@
     {
       name: 'Audrey Shin',
       title: 'CS + CogSci Undergrad \'27',
-      img: '/images/audrey-shin.jpg'
+      //img: '/images/audrey-shin.jpg'
     },
     {
       name: 'Dhruv Daiya',
       title: 'CS + DS Undergrad \'27',
-      img: '/images/dhruv-daiya.jpg'
+      //img: '/images/dhruv-daiya.jpg'
     },
     {
       name: 'Elias Xu',
       title: '...........................',
-      img: '/images/elias-xu.jpg'
+      //img: '/images/elias-xu.jpg'
     }
   ];
 </script>
@@ -50,7 +50,7 @@
   <div class="grid">
     {#each advisors as person}
       <div class="card">
-        <img src={person.img} alt={person.name} />
+        <!--<img src={person.img} alt={person.name} />-->
         <h3>{person.name}</h3>
         <p>{person.title}</p>
       </div>
@@ -61,7 +61,7 @@
   <div class="grid">
     {#each team as person}
       <div class="card">
-        <img src={person.img} alt={person.name} />
+        <!--<img src={person.img} alt={person.name} />-->
         <h3>{person.name}</h3>
         <p>{person.title}</p>
       </div>
