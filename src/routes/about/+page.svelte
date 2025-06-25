@@ -21,7 +21,7 @@
 	<p>
 		The AI for Behavioural Discovery project aims to understand whether animal behaviour 
 		is affected by exposure to EMF radiation using a machine learning and Convolutional Neural Networks (CNNs) approach. 
-		We have conducted experiments on cockroaches, bees, and ants so far using AlexNet, achieving positive results with ants. The model was able to successfully classify field states between Positive, Negative and Off based only on behavioural changes of the ants.
+		We have conducted experiments on cockroaches, bees, and ants. So far, we have achieved positive results with ants using AlexNet. The model was able to successfully classify field states between Positive, Negative and Off based only on behavioural changes of the ants.
 	</p>
 
 </div>
