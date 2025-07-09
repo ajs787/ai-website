@@ -94,10 +94,9 @@
 	<p>
 		Finished png conversion code and continued debugging data pipeline and bin file conversion issues.
 	</p>
-	<div <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTP65O6t1S37-FX7O8LlSeOwgiOuFF1POj1ohwym9gSeGUeaq-cSPjCxIRKiR7JWHyyfEJAlQ4qeoWT/pubembed?start=false&loop=false&delayms=5000" 
-		frameborder="0" 
-		width="960" 
-		height="569" 
+	<div class="slides-container">
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTP65O6t1S37-FX7O8LlSeOwgiOuFF1POj1ohwym9gSeGUeaq-cSPjCxIRKiR7JWHyyfEJAlQ4qeoWT/pubembed?start=false&loop=false&delayms=3000" 
+		frameborder="0" width="960" height="569" 
 		allowfullscreen="true" 
 		mozallowfullscreen="true" 
 		webkitallowfullscreen="true"></iframe>
@@ -107,14 +106,19 @@
 		Week 6 - Debugging Pt 3
 	</h2>
 	<p>
-		Finally foun the error in the bin file conversion. Updated submodules and started running fixed code on control data.
-	<div <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTP65O6t1S37-FX7O8LlSeOwgiOuFF1POj1ohwym9gSeGUeaq-cSPjCxIRKiR7JWHyyfEJAlQ4qeoWT/pubembed?start=false&loop=false&delayms=5000" 
-		frameborder="0" 
-		width="960" 
-		height="569" 
-		allowfullscreen="true" 
-		mozallowfullscreen="true" 
-		webkitallowfullscreen="true"></iframe>
+		Finally found the error in the bin file conversion. Updated submodules and started running fixed code on control data.
+	<div class="slides-container">
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ9E-tPfkGzni8oV3mlZOyX6c0zR5oqgbSXv9Rzrx-X9qEUb3OO3XHdekIo8Yp8XROHxVVft-8-jZn7/pubembed?start=false&loop=false&delayms=3000" 
+		frameborder="0" width="960" 
+		height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+	</div>
+
+	<h2>
+		Week 7 - Saliency Maps + Frame Cropping
+	</h2>
+	<p>
+		
+	<div class="slides-container">
 	</div>
 
 </div>
