@@ -23,17 +23,27 @@
     {
       name: 'Audrey Shin',
       title: 'CS + CogSci Undergrad \'27',
-      //img: '/images/audrey-shin.jpg'
+      //img: '/images/audrey.jpg'
     },
     {
       name: 'Dhruv Daiya',
       title: 'CS + DS Undergrad \'27',
-      //img: '/images/dhruv-daiya.jpg'
+      //img: '/images/dhruv.jpg'
     },
     {
       name: 'Elias Xu',
-      title: '...........................',
-      //img: '/images/elias-xu.jpg'
+      title: 'Incoming Cornell Freshman \'29',
+      //img: '/images/elias.jpg'
+    },
+    {
+      name: 'Natalie Tang',
+      title: 'Lawrenceville School Senior',
+      //img: '/images/natalie.jpg'
+    },
+    {
+      name: 'Hannah Hollosi',
+      title: 'CS + DS Undergrad \'28',
+      //img: '/images/hannah.jpg'
     }
   ];
 </script>
@@ -50,7 +60,6 @@
   <div class="grid">
     {#each advisors as person}
       <div class="card">
-        <!--<img src={person.img} alt={person.name} />-->
         <h3>{person.name}</h3>
         <p>{person.title}</p>
       </div>
@@ -61,7 +70,6 @@
   <div class="grid">
     {#each team as person}
       <div class="card">
-        <!--<img src={person.img} alt={person.name} />-->
         <h3>{person.name}</h3>
         <p>{person.title}</p>
       </div>
@@ -95,35 +103,58 @@
   }
 
   .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
-	gap: 2rem;
-	margin-bottom: 4rem;
-	justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    justify-items: center;
+  }
+
+  @media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 2fr);
+  }
 }
 
+  @media (max-width: 500px) {
+    .grid {
+      grid-template-columns: 2fr;
+    }
+  }
+
   .card {
-	display: flex;
-  	justify-content: flex-start;  
-  	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 12px;
+    width: 250px;
+    height: 120px;
+
+    background: rgba(93, 94, 101, 0.1);
+    border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
 
-	height: 200px;
+    /* Prevent shrinkage on short text */
+    flex-shrink: 0;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
   }
 
   [data-theme='dark'] .card {
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   }
 
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
   }
 
   img {
@@ -138,7 +169,7 @@
   h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin: 0.5rem 0 0;
+    margin-bottom: 0.25rem;
     color: var(--heading-color);
   }
 
