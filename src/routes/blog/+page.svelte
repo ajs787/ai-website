@@ -117,7 +117,7 @@
 		Week 7 - Sampling Speed Up
 	</h2>
 	<p>
-		The old pipeline was ~0.5sec per sample. Using PNG compressions: ~0.07 per sample. Changing sampling structure: ~0.03 per sample.
+		The old pipeline was ~0.5 sec per sample. Using PNG compressions: ~0.07 per sample. Changing sampling structure: ~0.03 per sample.
 		It is now much faster to process the millions of frames we have. We also fixed the bee_analysis segmentation labeling tool compatibility to work with 
 		both macOS and linux. We have also started working on the paper.
 
