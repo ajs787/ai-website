@@ -114,12 +114,36 @@
 	</div>
 
 	<h2>
-		Week 7 - Saliency Maps + Frame Cropping
+		Week 7 - Sampling Speed Up
 	</h2>
 	<p>
-		
+		The old pipeline was ~0.5sec per sample. Using PNG compressions: ~0.07 per sample. Changing sampling structure: ~0.03 per sample.
+		It is now much faster to process the millions of frames we have. We also fixed the bee_analysis segmentation labeling tool compatibility to work with 
+		both macOS and linux. We have also started working on the paper.
+
+	</p>
 	<div class="slides-container">
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSACw50XcgZyqkehzdoQ4QutwO3rXhHo0uDzZNwOL0Yw_Jubi1wfV_BPIiimE7XjbpB7OPPQ7hLDzk6/pubembed?start=false&loop=false&delayms=3000" 
+		frameborder="0" width="960" height="569" 
+		allowfullscreen="true" mozallowfullscreen="true" 
+		webkitallowfullscreen="true"></iframe>
 	</div>
+
+
+	<h2>
+		Week 8 - Data Cropping + Saliency Maps
+	</h2>
+	<p>
+		We worked on cropping the data to remove the empty space around the ants, which will help with the machine learning.
+	</p>
+	<div class="slides-container">
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQHRmSRNG7ndaAtSqBkoqBOMjM2F4pTbp0WK50HgfU2jWseUddYnqpLDC714a4pigDh9WUUo9pNxhda/pubembed?start=false&loop=false&delayms=3000" 
+		frameborder="0" width="960" height="569" 
+		allowfullscreen="true" 
+		mozallowfullscreen="true" 
+		webkitallowfullscreen="true"></iframe>
+	</div>
+
 
 </div>
 
