@@ -144,7 +144,7 @@
 
   .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 15px rgba(23, 23, 23, 0.08);
   }
 
   [data-theme='dark'] .card {
@@ -154,7 +154,7 @@
 
   .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 15px rgba(42, 42, 42, 0.08);
   }
 
   img {

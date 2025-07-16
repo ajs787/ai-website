@@ -135,7 +135,7 @@
 	</h2>
 	<p>
 		We worked on cropping the data to remove the empty space around the ants, which will help with the machine learning. 
-		We updated the annotation tool to create visualizations using saliency maps.
+		We also updated the annotation tool to create visualizations using saliency maps.
 	</p>
 	<div class="slides-container">
 		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQHRmSRNG7ndaAtSqBkoqBOMjM2F4pTbp0WK50HgfU2jWseUddYnqpLDC714a4pigDh9WUUo9pNxhda/pubembed?start=false&loop=false&delayms=3000" 
